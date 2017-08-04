@@ -1,5 +1,7 @@
 # crewlybot
-A web scraper that emails you when clothing is in stock 
+A web scraper that emails you when clothing is in stock.
+
+Right now it is hardcoded to check 'https://www.jcrew.com/p/E8592' but you can edit that LOC.  
 
 # Prereqs 
 
