@@ -1,7 +1,7 @@
 # crewlybot
 A web scraper that emails you when clothing is in stock 
 
-#Prereqs 
+# Prereqs 
 
   You will need to create the file config/application.yml 
   
@@ -15,7 +15,7 @@ A web scraper that emails you when clothing is in stock
 
 
 
-#Use
+# Use
 
     npm install
 
@@ -23,6 +23,6 @@ A web scraper that emails you when clothing is in stock
     
     
     
-#Outcome
+# Outcome
 
 Every 30 mins, if the clothing is in stock, you will get an email at the Alert Destination Email Address 
