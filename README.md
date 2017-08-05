@@ -16,6 +16,9 @@ Right now it is hardcoded to check 'https://www.jcrew.com/p/E8592' but you can e
           }
           
           
+   Note: The email_key_secret is an API key secret that you will need to create using a new free account on Sendgrid.  This is because NodeJS can't easily send emails on its own, it needs a third-party service like Sendgrid.  
+          
+          
  #  The secret sauce 
   
   The parseHTML function uses Jquery to find specific elements on the page, evalate them, and then send an email based on a condition.  This is the real heart of this bot.  The rest of the bot's code really just facilitates this function.  
