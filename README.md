@@ -1,5 +1,5 @@
 # crewlybot
-A web scraper that emails you when clothing is in stock.
+A web scraper that emails you when clothing is in stock.  This runs in a terminal and you will need NodeJS installed.
 
 Right now it is hardcoded to check 'https://www.jcrew.com/p/E8592' but you can edit that url right in the code.  
 
@@ -53,9 +53,9 @@ Right now it is hardcoded to check 'https://www.jcrew.com/p/E8592' but you can e
 
 # Use
 
-    npm install
+    npm install  #(installs required packages) 
 
-    node index.js 
+    node index.js   #(starts the bot)
     
     
     
