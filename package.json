@@ -1,0 +1,35 @@
+{
+  "name": "crewlybot",
+  "version": "1.0.0",
+  "description": "A web scraper that emails you when clothing is in stock.",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "figaro": "^0.1.10",
+    "jquery": "^3.2.1",
+    "jsdom": "^11.1.0",
+    "nodemailer": "^4.0.1",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "phantom": "^4.0.5",
+    "phantomjs": "^2.1.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/admazzola/crewlybot.git"
+  },
+  "keywords": [
+    "scrape",
+    "clothing",
+    "bot"
+  ],
+  "author": "admazzola",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/admazzola/crewlybot/issues"
+  },
+  "homepage": "https://github.com/admazzola/crewlybot#readme"
+}
