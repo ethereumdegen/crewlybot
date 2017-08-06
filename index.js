@@ -12,7 +12,18 @@ function envCallback()
   console.log('env callback')
 }
 
-function parseHTML(content)
+
+
+function update()
+{
+
+  scrapeWebData( parseHTML, sendEmail )
+
+}
+
+
+
+function parseHTML(content, alert_callback)
 {
 
 
@@ -33,7 +44,7 @@ function parseHTML(content)
 
     if(avail)
     {
-      sendEmail("The size 11s are available!")
+      alert_callback("The size 11s are available!")
     }
 
 
@@ -46,7 +57,7 @@ function parseHTML(content)
 
         if(avail)
         {
-          sendEmail("The size 10s are available!")
+          alert_callback("The size 10s are available!")
         }
 
 
@@ -60,7 +71,7 @@ function parseHTML(content)
 
 
 
-function scrapeWebData()
+function scrapeWebData( parse_callback, alert_callback )
 {
 
 
@@ -74,7 +85,7 @@ function scrapeWebData()
         page.property('content').then(function(content) {
       //    console.log(content);
 
-          parseHTML(content)
+          parse_callback(content,alert_callback)
 
         //page.close();
           var promise = page.close();
@@ -126,7 +137,7 @@ function sendEmail(message)
             console.log(err);
           }
           else {
-            console.log('Message sent: ' + info.response);
+            console.log('Message sent: ' + message );
           }
       });
 
@@ -137,7 +148,6 @@ function sendEmail(message)
 }
 
 
-scrapeWebData()
-setInterval(function(){scrapeWebData()}, 30 * 60 * 1000 ); //every half hour
 
- 
+update()
+setInterval(function(){update()}, 30 * 60 * 1000 ); //every half hour
