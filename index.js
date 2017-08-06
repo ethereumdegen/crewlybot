@@ -140,18 +140,4 @@ function sendEmail(message)
 scrapeWebData()
 setInterval(function(){scrapeWebData()}, 30 * 60 * 1000 ); //every half hour
 
-
-
-/*
-
-cample config/application.yml
-
-{
-"email_address": "xxx@gmail.com",
-"email_password": "test",
-"alert_destination_email_address": "yyy@gmail.com"
-}
-
-
-
-*/
+ 
