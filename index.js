@@ -53,17 +53,15 @@ function parseHTML(content, alert_callback)
     var avail = $(elem_to_check).hasClass('is-unavailable') == false
 
 
-
-
-        if(avail)
-        {
-          alert_callback("The size 10s are available!")
-        }
+    if(avail)
+    {
+      alert_callback("The size 10s are available!")
+    }
 
 
 
     console.log("are size 10 NB791 available?")
-      console.log(avail)
+    console.log(avail)
 
 
    console.log('parsed html ')
